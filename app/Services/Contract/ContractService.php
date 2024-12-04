@@ -26,7 +26,7 @@ class ContractService
         }
 
         $template = Storage::get($templatePath);
-        $template = self::replaceAliasesWithVars($contract, $template);
+        $template = self::replaceAliases($contract, $template);
 
         $pdf = Pdf::loadHTML($template, 'UTF-8');
 
@@ -42,7 +42,7 @@ class ContractService
         return "templates/contract_template_$contractType.html";
     }
 
-    public static function replaceAliasesWithVars(Contract $contract, string $template): string
+    public static function replaceAliases(Contract $contract, string $template): string
     {
         $vars = $contract->isIndividual() ? self::getIndividualTemplateVars() : self::getLegalEntityTemplateVars();
 

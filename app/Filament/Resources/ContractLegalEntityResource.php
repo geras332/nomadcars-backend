@@ -6,6 +6,7 @@ use App\Filament\Resources\ContractLegalEntityResource\Pages;
 use App\Models\Contract;
 use App\Services\Contract\ContractService;
 use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -13,6 +14,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Auth;
 
 class ContractLegalEntityResource extends Resource
 {
@@ -23,11 +25,10 @@ class ContractLegalEntityResource extends Resource
     protected static ?int $navigationSort = 2;
     protected static ?string $breadcrumb = 'Контракты для юр. лиц';
 
-    const TEMPLATE_PATH = 'templates/contract_template_legal_entity.html';
-
     public static function form(Form $form): Form
     {
         return $form->schema([
+            Hidden::make('initiator_id')->default(Auth::id()),
             Section::make('Данные компании')
                 ->schema([
                     TextInput::make('company_name')
@@ -154,7 +155,7 @@ class ContractLegalEntityResource extends Resource
             ->actions([
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\Action::make('generate_pdf')
-                    ->label('Сгенерировать PDF')
+                    ->label('Сгенерировать контракт')
                     ->icon('heroicon-o-document')
                     ->color('primary')
                     ->action(function (Contract $record) {

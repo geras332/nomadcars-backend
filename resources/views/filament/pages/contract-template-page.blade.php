@@ -2,10 +2,10 @@
 
 <x-filament-panels::page>
     <x-filament::tabs label="Content tabs">
-        <x-filament::tabs.item :active="$activeTab === 'individual'" wire:click="setIndividualTab()">
+        <x-filament::tabs.item :active="$activeTab === ContractService::INDIVIDUAL_TEMPLATE_NAME" wire:click="setIndividualTab()">
             Шаблон для для физ. лиц
         </x-filament::tabs.item>
-        <x-filament::tabs.item :active="$activeTab === 'legalEntity'" wire:click="setLegalEntityTab()">
+        <x-filament::tabs.item :active="$activeTab === ContractService::LEGAL_ENTITY_TEMPLATE_NAME" wire:click="setLegalEntityTab()">
             Шаблон для для юр. лиц
         </x-filament::tabs.item>
     </x-filament::tabs>
