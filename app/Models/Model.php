@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model as LaravelModel;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Model extends LaravelModel
 {
@@ -14,4 +15,9 @@ class Model extends LaravelModel
         'name',
         'brand_id',
     ];
+
+    public function brand(): BelongsTo
+    {
+        return $this->belongsTo(Brand::class);
+    }
 }
