@@ -2,22 +2,28 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\CarResource\Pages;
+use App\Filament\Resources\AdvertisementResource\Pages;
 use App\Models\Advertisement;
+use Exception;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
-class CarResource extends Resource
+class AdvertisementResource extends Resource
 {
     protected static ?string $model = Advertisement::class;
+    protected static ?string $modelLabel = 'Объявление';
 
     protected static ?string $navigationLabel = 'Объявления';
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
-    protected static ?string $navigationGroup = 'Бренды и автомобили';
+    protected static ?string $navigationGroup = 'Бренды и объявления';
+    protected static ?int $navigationSort = 2;
     protected static ?string $slug = 'advertisements';
     protected static ?string $breadcrumb = 'Объявления';
 
@@ -66,14 +72,26 @@ class CarResource extends Resource
                     ->required()
                     ->numeric()
                     ->prefix('$'),
-                Forms\Components\Textarea::make('images')
-                    ->required()
-                    ->columnSpanFull(),
+                Forms\Components\Select::make('brand_id')
+                    ->label('Бренд')
+                    ->relationship('brand', 'name')
+                    ->native(false)
+                    ->preload()
+                    ->searchable()
+                    ->columnSpanFull()
+                    ->required(),
+                FileUpload::make('images')
+                    ->label('Изображения')
+                    ->disk('public')
+                    ->directory('advertisements')
+                    ->multiple()
+                    ->columnSpanFull()
+                    ->required(),
             ]);
     }
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public static function table(Table $table): Table
     {
@@ -101,10 +119,37 @@ class CarResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                DateRangeFilter::make('created_at')->label('Дата создания'),
+                Filter::make('vin_code')
+                    ->label('VIN Код')
+                    ->form([
+                        Forms\Components\TextInput::make('vin_code')->label('VIN Код')->placeholder('VIN Код'),
+                    ])
+                    ->query(function (Builder $query, array $data): Builder {
+                        if (isset($data['vin_code'])) {
+                            return $query->where('vin_code', $data['vin_code']);
+                        }
+
+                        return $query;
+                    })
+                    ->indicateUsing(function (array $data): array {
+                        $indicators = [];
+
+                        if ($data['vin_code']) {
+                            $indicators['vin_code'] = 'VIN ' . $data['vin_code'];
+                        }
+
+                        return $indicators;
+                    }),
+                Tables\Filters\SelectFilter::make('brand')
+                    ->label('Бренд')
+                    ->relationship('brand', 'name')
+                    ->searchable()
+                    ->preload(),
+                DateRangeFilter::make('created_at')->label('Дата создания')->placeholder('Дата создания'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -124,9 +169,9 @@ class CarResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListCars::route('/'),
-            'create' => Pages\CreateCar::route('/create'),
-            'edit' => Pages\EditCar::route('/{record}/edit'),
+            'index' => Pages\ListAdvertisements::route('/'),
+            'create' => Pages\CreateAdvertisements::route('/create'),
+            'edit' => Pages\EditAdvertisements::route('/{record}/edit'),
         ];
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\CarResource\Pages;
+namespace App\Filament\Resources\AdvertisementResource\Pages;
 
-use App\Filament\Resources\CarResource;
+use App\Filament\Resources\AdvertisementResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditCar extends EditRecord
+class EditAdvertisements extends EditRecord
 {
-    protected static string $resource = CarResource::class;
+    protected static string $resource = AdvertisementResource::class;
     protected static ?string $title = 'Редактировать объявление';
 
     protected function getHeaderActions(): array
