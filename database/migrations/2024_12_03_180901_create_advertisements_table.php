@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cars', function (Blueprint $table) {
+        Schema::create('advertisements', function (Blueprint $table) {
             $table->id();
+
+            $table->foreignId('brand_id')->constrained('brands')->cascadeOnDelete();
 
             $table->string('vin_code')->unique();
             $table->string('name');
@@ -24,9 +26,8 @@ return new class extends Migration
             $table->decimal('mileage');
             $table->decimal('engine_capacity');
             $table->decimal('price');
-            $table->text('images');
 
-            $table->foreignId('generation_id')->constrained()->onDelete('cascade');
+            $table->index(['vin_code']);
 
             $table->timestamps();
         });
@@ -37,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('cars');
+        Schema::dropIfExists('advertisements');
     }
 };

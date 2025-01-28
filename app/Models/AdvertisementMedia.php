@@ -3,23 +3,23 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Storage;
 
-class CarImage extends Model
+class AdvertisementMedia extends Model
 {
     use HasFactory;
 
-    protected $table = 'car_images';
+    protected $table = 'advertisement_media';
     protected $fillable = [
         'path',
-        'is_default',
         'car_id',
     ];
 
-    public function car(): BelongsTo
+    public function advertisement(): BelongsTo
     {
-        return $this->belongsTo(Car::class);
+        return $this->belongsTo(Advertisement::class);
     }
 
     public function getImageUrlAttribute(): string

@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Storage;
+use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
 class BrandResource extends Resource
 {
@@ -46,6 +47,9 @@ class BrandResource extends Resource
             ]);
     }
 
+    /**
+     * @throws \Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
@@ -66,10 +70,12 @@ class BrandResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                DateRangeFilter::make('created_at'),
+
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                Tables\Actions\EditAction::make('created_at')
+                    ->label('Дата создания'),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
