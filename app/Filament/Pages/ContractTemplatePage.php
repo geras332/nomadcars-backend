@@ -2,6 +2,7 @@
 
 namespace App\Filament\Pages;
 
+use App\Models\User;
 use App\Services\Contract\ContractService;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
@@ -60,6 +61,14 @@ class ContractTemplatePage extends Page
                 ->output(TiptapOutput::Html)
                 ->required()
         ]);
+    }
+
+    public static function canAccess(): bool
+    {
+        /** @var User $user */
+        $user = request()->user();
+
+        return $user->isSuperAdmin();
     }
 
     /**

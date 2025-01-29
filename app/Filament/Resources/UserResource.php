@@ -8,7 +8,9 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
+use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
 class UserResource extends Resource
 {
@@ -38,9 +40,29 @@ class UserResource extends Resource
                 Forms\Components\TextInput::make('password')
                     ->password()
                     ->maxLength(255),
+                Forms\Components\Select::make('roles')
+                    ->label('Роли')
+                    ->multiple()
+                    ->relationship('roles', 'name')
+                    ->native(false)
+                    ->searchable()
+                    ->preload()
+                    ->columnSpanFull(),
+                Forms\Components\FileUpload::make('avatar')
+                    ->label('Аватар')
+                    ->disk('public')
+                    ->directory('avatars')
+                    ->image()
+                    ->maxSize(2048)
+                    ->acceptedFileTypes(['image/jpeg', 'image/png', 'image/jpg'])
+                    ->helperText('Загрузите изображение не более 2MB в формате JPEG, PNG.')
+                    ->columnSpanFull()
             ]);
     }
 
+    /**
+     * @throws \Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
@@ -71,7 +93,15 @@ class UserResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                SelectFilter::make('roles')
+                    ->label('Роль')
+                    ->relationship('roles', 'name')
+                    ->native(false)
+                    ->preload()
+                    ->searchable(),
+                DateRangeFilter::make('created_at')
+                    ->label('Дата создания')
+                    ->placeholder('Дата создания')
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
