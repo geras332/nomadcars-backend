@@ -32,14 +32,17 @@ class ArticleResource extends Resource
                     ->default(fn () => Auth::id()),
 
                 Forms\Components\TextInput::make('title')
+                    ->label('Заголовок')
                     ->required()
                     ->maxLength(255),
 
                 Forms\Components\TextInput::make('description')
+                    ->label('Описание')
                     ->required()
                     ->maxLength(255),
 
                 FileUpload::make('thumbnail')
+                    ->label('Миниатюра')
                     ->image()
                     ->directory('thumbnails')
                     ->preserveFilenames()
@@ -48,6 +51,7 @@ class ArticleResource extends Resource
                     ->columnSpanFull(),
 
                 Forms\Components\RichEditor::make('content')
+                    ->label('Контент')
                     ->toolbarButtons([
                         'attachFiles',
                         'blockquote',
