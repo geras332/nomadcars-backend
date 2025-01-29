@@ -31,9 +31,7 @@ return new class extends Migration
             $table->string('sale_currency');
             $table->decimal('sale_exchange_rate', 10, 4);
 
-            $table->foreignId('contract_id')->constrained('contracts');
-
-            $table->softDeletes();
+            $table->foreignId('contract_id')->constrained('contracts')->cascadeOnDelete();
 
             $table->timestamps();
         });
