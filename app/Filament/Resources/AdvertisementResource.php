@@ -22,7 +22,7 @@ class AdvertisementResource extends Resource
 
     protected static ?string $navigationLabel = 'Объявления';
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
-    protected static ?string $navigationGroup = 'Бренды и объявления';
+    protected static ?string $navigationGroup = 'Объявления и материалы';
     protected static ?int $navigationSort = 2;
     protected static ?string $slug = 'advertisements';
     protected static ?string $breadcrumb = 'Объявления';

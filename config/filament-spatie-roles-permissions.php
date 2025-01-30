@@ -17,7 +17,7 @@ return [
 
     'scope_to_tenant' => true,
 
-    'super_admin_role_name' => 'Super Admin',
+    'super_admin_role_name' => 'admin',
 
     /*
      * Set as false to remove from navigation.

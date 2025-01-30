@@ -5,23 +5,35 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\CarResource\Pages;
 use App\Models\Car;
 use App\Models\Contract;
+use Exception;
 use Filament\Forms;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Auth;
+use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
+use Parallax\FilamentComments\Tables\Actions\CommentsAction;
 
 class CarResource extends Resource
 {
     protected static ?string $model = Car::class;
+    protected static ?string $modelLabel = 'Машина';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Логистика и контракты';
+    protected static ?string $navigationLabel = 'Логистика автомобилей';
+    protected static ?string $navigationIcon = 'heroicon-o-map';
+    protected static ?int $navigationSort = 1;
+    protected static ?string $breadcrumb = 'Логистика автомобилей';
+    protected static ?string $slug = 'logistics-cars';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
+                Hidden::make('manager_id')->default(Auth::id()),
                 Forms\Components\Section::make('Основные данные автомобиля')
                     ->schema([
                         Forms\Components\TextInput::make('name')
@@ -70,11 +82,17 @@ class CarResource extends Resource
 
                 Forms\Components\Section::make('Валюта и обменные курсы')
                     ->schema([
-                        Forms\Components\TextInput::make('purchase_currency')
+                        Forms\Components\Select::make('purchase_currency')
                             ->label('Валюта покупки')
                             ->required()
-                            ->maxLength(255)
-                            ->helperText('Укажите валюту, в которой была проведена покупка'),
+                            ->options([
+                                'rub' => 'Рубль (₽)',
+                                'usd' => 'Доллар США (USD)',
+                                'cny' => 'Юань (CNY)',
+                                'eur' => 'Евро (EUR)',
+                            ])
+                            ->native(false)
+                            ->helperText('Выберите валюту, в которой была проведена покупка'),
 
                         Forms\Components\TextInput::make('purchase_exchange_rate')
                             ->label('Курс покупки')
@@ -82,11 +100,17 @@ class CarResource extends Resource
                             ->numeric()
                             ->helperText('Укажите курс валюты на момент покупки'),
 
-                        Forms\Components\TextInput::make('sale_currency')
+                        Forms\Components\Select::make('sale_currency')
                             ->label('Валюта продажи')
                             ->required()
-                            ->maxLength(255)
-                            ->helperText('Укажите валюту, в которой будет происходить продажа'),
+                            ->options([
+                                'rub' => 'Рубль (₽)',
+                                'usd' => 'Доллар США (USD)',
+                                'cny' => 'Юань (CNY)',
+                                'eur' => 'Евро (EUR)',
+                            ])
+                            ->native(false)
+                            ->helperText('Выберите валюту, в которой будет происходить продажа'),
 
                         Forms\Components\TextInput::make('sale_exchange_rate')
                             ->label('Курс продажи')
@@ -98,6 +122,23 @@ class CarResource extends Resource
 
                 Forms\Components\Section::make('Статус и контракт')
                     ->schema([
+                        Forms\Components\Select::make('status')
+                            ->label('Статус машины')
+                            ->options([
+                                'china' => 'Китай',
+                                'kashgar' => 'Кашгар',
+                                'irkeshtam' => 'Иркештам',
+                                'bishkek' => 'Бишкек',
+                                'osh' => 'Ош',
+                                'svh' => 'СВХ',
+                                'customs' => 'Растаможка - оформление',
+                                'delivered' => 'Передали клиенту',
+                                'delayed' => 'Задерживается',
+                            ])
+                            ->native(false)
+                            ->required()
+                            ->helperText('Выберите текущее местоположение или статус машины'),
+
                         Forms\Components\Select::make('payment_status')
                             ->label('Статус платежа')
                             ->options([
@@ -125,62 +166,86 @@ class CarResource extends Resource
             ]);
     }
 
+    /**
+     * @throws Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('contract.id')
+                    ->label('Контракт')
+                    ->getStateUsing(function (Car $car) {
+                        return "NOMADCARS{$car->contract->getAttribute('id')}";
+                    })
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Название машины')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('vin')
+                    ->label('VIN')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('customer_name')
+                Tables\Columns\TextColumn::make('customer_fio')
+                    ->label('ФИО клиента')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('customer_phone')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('purchase_price')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('sale_price')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('commission_payment')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('payment_status')
+                    ->label('Статус платежа')
+                    ->searchable()
+                    ->getStateUsing(function (Car $car) {
+                        $paymentStatus = $car->getAttribute('payment_status');
+
+                        return match ($paymentStatus) {
+                            "paid" => 'Оплачено',
+                            "not_paid" => 'Не оплачено',
+                            default => 'Неизвестный статус',
+                        };
+                    }),
+                Tables\Columns\TextColumn::make('status')
+                    ->label('Статус')
+                    ->getStateUsing(function (Car $car) {
+                        $status = $car->getAttribute('status');
+
+                        return match ($status) {
+                            "china" => 'Китай',
+                            "kashgar" => 'Кашгар',
+                            "irkeshtam" => 'Иркештам',
+                            "bishkek" => 'Бишкек',
+                            "osh" => 'Ош',
+                            "svh" => 'СВХ',
+                            "customs" => 'Растаможка - оформление',
+                            "delivered" => 'Передали клиенту',
+                            "delayed" => 'Задерживается',
+                            default => 'Неизвестный статус',
+                        };
+                    })
                     ->searchable(),
-                Tables\Columns\TextColumn::make('purchase_currency')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('purchase_exchange_rate')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('sale_currency')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('sale_exchange_rate')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('contract.id')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Дата создания')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Дата обновление')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-                //
+                DateRangeFilter::make('created_at')
+                    ->placeholder('Дата создания')
+                    ->label('Дата создания'),
             ])
             ->actions([
+                CommentsAction::make(),
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->emptyStateHeading('Нет записей для отображения');
     }
 
     public static function getRelations(): array

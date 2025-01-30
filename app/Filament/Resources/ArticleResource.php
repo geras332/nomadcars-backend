@@ -20,7 +20,10 @@ class ArticleResource extends Resource
     protected static ?string $modelLabel = 'Статья';
 
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
+    protected static ?string $navigationGroup = 'Объявления и материалы';
     protected static ?string $navigationLabel = 'Статьи';
+    protected static ?int $navigationSort = 3;
+
     protected static ?string $slug = 'articles';
     protected static ?string $breadcrumb = 'Статьи';
 

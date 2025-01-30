@@ -15,14 +15,15 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Auth;
+use Malzariey\FilamentDaterangepickerFilter\Filters\DateRangeFilter;
 
 class ContractLegalEntityResource extends Resource
 {
     protected static ?string $model = Contract::class;
-    protected static ?string $navigationGroup = 'Менеджер контрактов';
+    protected static ?string $navigationGroup = 'Логистика и контракты';
     protected static ?string $navigationIcon = 'heroicon-o-building-office';
     protected static ?string $navigationLabel = 'Контракты для юр. лиц';
-    protected static ?int $navigationSort = 2;
+    protected static ?int $navigationSort = 3;
     protected static ?string $breadcrumb = 'Контракты для юр. лиц';
 
     public static function form(Form $form): Form
@@ -93,6 +94,9 @@ class ContractLegalEntityResource extends Resource
         ]);
     }
 
+    /**
+     * @throws \Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
@@ -150,7 +154,9 @@ class ContractLegalEntityResource extends Resource
                 return $query->whereNotNull('company_name');
             })
             ->filters([
-                //
+                DateRangeFilter::make('created_at')
+                    ->placeholder('Дата создания')
+                    ->label('Дата создания'),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
@@ -169,7 +175,8 @@ class ContractLegalEntityResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->emptyStateHeading('Нет записей для отображения');
     }
 
     public static function getRelations(): array

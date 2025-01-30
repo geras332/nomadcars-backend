@@ -9,6 +9,8 @@ use Filament\Resources\Pages\ListRecords;
 class ListCars extends ListRecords
 {
     protected static string $resource = CarResource::class;
+    protected static ?string $title = 'Машины в перевозке';
+    protected static ?string $breadcrumb = 'Машины в перевозке';
 
     protected function getHeaderActions(): array
     {

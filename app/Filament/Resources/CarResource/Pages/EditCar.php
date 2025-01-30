@@ -9,6 +9,7 @@ use Filament\Resources\Pages\EditRecord;
 class EditCar extends EditRecord
 {
     protected static string $resource = CarResource::class;
+    protected static ?string $title = 'Редактировать машину';
 
     protected function getHeaderActions(): array
     {

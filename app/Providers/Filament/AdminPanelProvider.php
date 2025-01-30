@@ -62,6 +62,11 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
+            ->navigationGroups([
+                'Объявления и материалы',
+                'Логистика и контракты',
+                'Роли и разрешения',
+            ])
             ->plugin(FilamentSpatieRolesPermissionsPlugin::make());
     }
 }

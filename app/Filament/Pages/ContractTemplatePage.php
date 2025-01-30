@@ -19,8 +19,8 @@ class ContractTemplatePage extends Page
     protected static ?string $title = 'Шаблоны';
     protected static ?string $navigationLabel = 'Шаблоны';
     protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
-    protected static ?string $navigationGroup = 'Менеджер контрактов';
-    protected static ?int $navigationSort = 3;
+    protected static ?string $navigationGroup = 'Логистика и контракты';
+    protected static ?int $navigationSort = 4;
 
     protected static string $view = 'filament.pages.contract-template-page';
 
