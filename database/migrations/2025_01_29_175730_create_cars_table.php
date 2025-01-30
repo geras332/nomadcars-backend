@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
-            $table->string('vin');
-            $table->string('customer_name');
+            $table->string('vin')->unique();
+            $table->string('customer_fio');
             $table->string('customer_phone')->nullable();
 
             $table->decimal('purchase_price', 10);
@@ -24,6 +24,7 @@ return new class extends Migration
             $table->decimal('commission_payment', 10);
 
             $table->string('payment_status', 64);
+            $table->string('status', 64)->nullable();
 
             $table->string('purchase_currency');
             $table->decimal('purchase_exchange_rate', 10, 4);
@@ -31,7 +32,10 @@ return new class extends Migration
             $table->string('sale_currency');
             $table->decimal('sale_exchange_rate', 10, 4);
 
-            $table->foreignId('contract_id')->constrained('contracts')->cascadeOnDelete();
+            $table->foreignId('contract_id')->constrained('contracts');
+            $table->foreignId('manager_id')->constrained('users');
+
+            $table->softDeletes();
 
             $table->timestamps();
         });

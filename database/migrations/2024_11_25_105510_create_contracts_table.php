@@ -30,7 +30,7 @@ return new class extends Migration
 
             $table->string('car_name');
             $table->string('vin_code');
-            $table->decimal('price', 10, 2);
+            $table->decimal('price', 10);
             $table->string('currency');
 
             // Дополнительные поля для юридического лица

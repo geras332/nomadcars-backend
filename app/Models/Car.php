@@ -14,17 +14,19 @@ class Car extends Model
     protected $fillable = [
         'name',
         'vin',
-        'customer_name',
+        'customer_fio',
         'customer_phone',
         'purchase_price',
         'sale_price',
         'commission_payment',
         'payment_status',
+        'status',
         'purchase_currency',
         'purchase_exchange_rate',
         'sale_currency',
         'sale_exchange_rate',
         'contract_id',
+        'manager_id',
     ];
 
     protected array $dates = ['deleted_at'];
@@ -32,5 +34,10 @@ class Car extends Model
     public function contract(): BelongsTo
     {
         return $this->belongsTo(Contract::class);
+    }
+
+    public function manager(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 }
