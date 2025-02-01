@@ -34,30 +34,6 @@ class CarResource extends Resource
         return $form
             ->schema([
                 Hidden::make('manager_id')->default(Auth::id()),
-                Forms\Components\Section::make('Основные данные автомобиля')
-                    ->schema([
-                        Forms\Components\TextInput::make('name')
-                            ->label('Название автомобиля')
-                            ->required()
-                            ->maxLength(255),
-
-                        Forms\Components\TextInput::make('vin')
-                            ->label('VIN Код')
-                            ->required()
-                            ->maxLength(255),
-
-                        Forms\Components\TextInput::make('customer_fio')
-                            ->label('ФИО клиента')
-                            ->required()
-                            ->maxLength(255),
-
-                        Forms\Components\TextInput::make('customer_phone')
-                            ->label('Номер телефона клиента')
-                            ->tel()
-                            ->maxLength(255),
-                    ])
-                    ->collapsible(),
-
                 Forms\Components\Section::make('Финансовая информация')
                     ->schema([
                         Forms\Components\TextInput::make('purchase_price')
@@ -179,15 +155,6 @@ class CarResource extends Resource
                         return "NOMADCARS{$car->contract->getAttribute('id')}";
                     })
                     ->sortable(),
-                Tables\Columns\TextColumn::make('name')
-                    ->label('Название машины')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('vin')
-                    ->label('VIN')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('customer_fio')
-                    ->label('ФИО клиента')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('payment_status')
                     ->label('Статус платежа')
                     ->searchable()
