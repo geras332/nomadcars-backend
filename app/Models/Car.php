@@ -16,10 +16,6 @@ class Car extends Model
 
     protected $table = 'cars';
     protected $fillable = [
-        'name',
-        'vin',
-        'customer_fio',
-        'customer_phone',
         'purchase_price',
         'sale_price',
         'commission_payment',

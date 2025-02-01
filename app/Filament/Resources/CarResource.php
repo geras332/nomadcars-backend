@@ -155,15 +155,6 @@ class CarResource extends Resource
                         return "NOMADCARS{$car->contract->getAttribute('id')}";
                     })
                     ->sortable(),
-                Tables\Columns\TextColumn::make('name')
-                    ->label('Название машины')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('vin')
-                    ->label('VIN')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('customer_fio')
-                    ->label('ФИО клиента')
-                    ->searchable(),
                 Tables\Columns\TextColumn::make('payment_status')
                     ->label('Статус платежа')
                     ->searchable()
