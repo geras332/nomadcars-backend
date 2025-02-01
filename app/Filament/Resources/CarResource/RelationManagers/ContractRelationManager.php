@@ -49,7 +49,6 @@ class ContractRelationManager extends RelationManager
     public function table(Table $table): Table
     {
         return $table
-            ->recordTitleAttribute('vin_code')
             ->columns([
                 TextColumn::make('contract_number')
                     ->label('Номер конракта')
@@ -82,6 +81,7 @@ class ContractRelationManager extends RelationManager
             ])
             ->filters([
                 DateRangeFilter::make('created_at')
+                    ->placeholder('Дата создания')
                     ->label('Дата создания'),
             ])
             ->headerActions([
@@ -94,6 +94,7 @@ class ContractRelationManager extends RelationManager
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->emptyStateHeading('Нет записей для отображения');
     }
 }
