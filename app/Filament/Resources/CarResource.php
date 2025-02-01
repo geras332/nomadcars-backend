@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CarResource\Pages;
+use App\Filament\Resources\CarResource\RelationManagers\ContractRelationManager;
 use App\Models\Car;
 use App\Models\Contract;
 use Exception;
@@ -155,8 +156,11 @@ class CarResource extends Resource
                         return "NOMADCARS{$car->contract->getAttribute('id')}";
                     })
                     ->sortable(),
-                Tables\Columns\TextColumn::make('payment_status')
-                    ->label('Статус платежа')
+                Tables\Columns\TextColumn::make('name')
+                    ->label('Название машины')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('vin')
+                    ->label('VIN')
                     ->searchable()
                     ->getStateUsing(function (Car $car) {
                         $paymentStatus = $car->getAttribute('payment_status');
@@ -218,7 +222,7 @@ class CarResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            ContractRelationManager::class,
         ];
     }
 
