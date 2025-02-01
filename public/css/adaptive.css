@@ -1,0 +1,293 @@
+/* pagination start */
+@media screen and (max-width: 750px) {
+    .pagination {
+        display: none;
+    }
+}
+
+/* pagination end */
+
+/* main block start */
+
+@media screen and (max-width: 1200px) {
+
+    .main_block2_right {
+        display: none;
+    }
+
+    .main_block2 {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .main_block2_left_filter {
+        display: none;
+    }
+
+    .from {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main_block2_left_list_card {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .main_block2_left_list_nav {
+        display: none;
+    }
+
+    .main_left_filter_mobile {
+        width: -webkit-fill-available;
+        padding: 0 20px;
+        display: flex;
+    }
+
+    .main_left_filter_mobile_top {
+        width: -webkit-fill-available;
+    }
+
+    .main_left_filter_botto_mobile {
+        width: -webkit-fill-available;
+        padding-top: 20px;
+    }
+
+    .main_left_filter_botto_mobile button {
+        width: -webkit-fill-available;
+        background: #2BAD72;
+        padding: 10px 15px;
+        gap: 6px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.47px;
+        color: #FFFFFF;
+        border: none;
+    }
+
+    .main_block_item {
+        padding: 15px;
+    }
+}
+
+/* main blockc end */
+
+/* cards start */
+
+@media screen and (max-width: 900px) {
+    .card_text span {
+        display: none;
+    }
+
+    .card_text_info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card_text h4 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.09px;
+        text-align: left;
+    }
+
+    .card_text button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18.83px;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card_text h4 {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19.09px;
+        text-align: left;
+    }
+
+    .card_img {
+        height: 100px;
+
+    }
+
+
+    .card_img img {
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .card {
+        padding: 7px;
+    }
+
+    .card_text button {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 18.83px;
+
+        padding: 7px 10px;
+    }
+
+    .card_img button {
+        width: 26px;
+        height: 26px;
+        border-radius: 5px;
+    }
+
+    .card_img button img {
+        width: 16px;
+        height: 16px;
+
+    }
+
+}
+
+/* cards end */
+
+/* header start */
+@media screen and (max-width: 990px) {
+    .header_top_block_content {
+        display: none;
+    }
+
+    .header_bottom_block {
+        display: none;
+    }
+
+    .header_top_block {
+        padding: 10px 0px;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: auto;
+    }
+
+    .header_mobile select {
+        background-color: #08080800;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 17.66px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+    }
+
+    .header_mobile select option {
+        background-color: #08080800;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 17.66px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #000000;
+    }
+
+    .header_mobile img {
+        width: 101px;
+        height: 37px;
+    }
+
+    .header_mobile button {
+        background-color: #00000000;
+        cursor: pointer;
+
+        border: none;
+    }
+
+    .header_mobile button img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* header end */
+/* banner_nomad_cars start */
+@media screen and (max-width: 750px) {
+    .banner_nomad_cars {
+        display: none;
+    }
+}
+
+/* banner_nomad_cars end */
+
+/*  main_nav start */
+
+@media screen and (max-width: 600px) {
+    .main_nav {
+        gap: 10px;
+    }
+
+    .main_nav p {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+    }
+
+}
+
+/* main_nav end */
+/* footer start */
+@media screen and (max-width: 980px) {
+    .footer_content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer_content {
+        flex-direction: column;
+    }
+
+    .footer_content_left {
+        gap: 15px;
+    }
+
+    .footer_content_left div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer_content_left div h4 {
+        font-size: 20px;
+    }
+
+    .footer_content_left div p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.09px;
+        text-align: left;
+    }
+
+    .footer_content_center {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: max-content 1fr;
+    }
+
+    .footer_content_center ul li a {
+        font-size: 16px;
+    }
+    .footer_content_center ul span {
+        font-size: 16px;
+    }
+}
+
+/* footer end */
