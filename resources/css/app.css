@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-dark: #222222;
+    --primary-very-dark: #080808;
+    --danger: #FF3D3D;
+    --light-gray: #EDEDED;
+    --black: #000000;
+    --success: #2BAD72;
+    --red: #884444;
+    --blue: #2D93FF;
+
+    --header-bg: var(--primary-dark);
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-bg {
+    background: var(--header-bg);
+}
+
+.footer-bg {
+    background: var(--primary-dark);
+}
+
+.notification-bg {
+    background: var(--danger);
+}
+
+.search-bg {
+    background: #EDEDED;
+}
+
+.text-primary-color {
+    color: var(--primary-very-dark);
+}
+
+@media screen and (max-width: 520px) {
+    footer ul {
+        font-size: 14px;
+    }
+}
