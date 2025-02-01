@@ -36,7 +36,9 @@
                 </div>
             </div>
 
-            <img src="{{ asset('images/logo-3.svg') }}" alt="Logo" class="w-[100px] h-[40px] block lg:hidden">
+            <a href="/">
+                <img src="{{ asset('images/logo-3.svg') }}" alt="Logo" class="w-[100px] h-[40px] block lg:hidden">
+            </a>
 
             <ul class="hidden lg:flex gap-[40px]">
 {{--                <li class="text-white text-sm cursor-pointer font-normal flex items-center gap-3 relative transition-transform duration-300 transform hover:scale-95">--}}
@@ -51,7 +53,7 @@
 {{--                </li>--}}
                 <li class="text-white text-sm cursor-pointer font-normal flex items-center gap-3 relative transition-transform duration-300 transform hover:scale-95">
                     <img src="{{ asset('images/icons/heart.svg') }}" alt="Bell">
-                    <span class="absolute top-[-10px] left-[15px] w-5 h-5 bg-red-500 text-white text-xs flex items-center justify-center rounded-full">3</span>
+                    <span class="absolute top-[-10px] left-[14px] w-5 h-5 bg-red-500 text-white text-xs flex items-center justify-center rounded-full">3</span>
                     <a href="#">Избранные автомобили</a>
                 </li>
                 <li class="text-white text-sm cursor-pointer font-normal flex items-center gap-3 transition-transform duration-300 transform hover:scale-95">
@@ -107,7 +109,9 @@
         </div>
     </div>
     <div class="bg-white container mx-auto hidden lg:flex justify-between items-center py-5">
-        <img src="{{ asset('images/logo-2.svg') }}" alt="Logo">
+        <a href="/">
+            <img src="{{ asset('images/logo-2.svg') }}" alt="Logo">
+        </a>
         <div class="search-bg rounded-[15px] w-[450px] h-[50px] px-5 py-3 items-center gap-3 border hidden xl:flex">
             <img src="{{ asset('images/icons/search.svg') }}" alt="Search" class="w-5 h-5">
             <input type="text" class="bg-transparent outline-none h-full flex-1 placeholder-gray-500 text-sm" placeholder="Поиск">

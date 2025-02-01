@@ -2,9 +2,9 @@
     <div class="footer-bg py-10">
         <div class="container mx-auto px-6 sm:px-0 flex md:justify-between justify-center items-center flex-wrap gap-10 sm:gap-0">
             <div class="flex flex-col text-center sm:text-start gap-5">
-                <div>
+                <a href="/">
                     <img src="{{ asset('images/logo-3.svg') }}" alt="Logo">
-                </div>
+                </a>
                 <p class="text-white text-base">
                     <span class="text-xl font-medium">Nomad Logistics Co., Ltd.</span> - <br/> Создаем будущее сейчас
                 </p>
