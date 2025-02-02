@@ -5,7 +5,7 @@
                 <div x-data="{ open: false, selected: 'RU' }" class="relative inline-block">
                     <button @click="open = !open" class="w-full h-full bg-white border border-gray-300 px-[10px] py-[5px] text-left rounded-[12px] flex items-center justify-between">
                         <span x-text="selected" class="text-xs font-medium"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
@@ -21,7 +21,7 @@
                 <div x-data="{ open: false, selected: 'USD' }" class="relative hidden lg:inline-block">
                     <button @click="open = !open" class="w-full h-full bg-white border border-gray-300 px-[10px] py-[5px] text-left rounded-[12px] flex items-center justify-between">
                         <span x-text="selected" class="text-xs font-medium"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M6 9l6 6 6-6"></path>
                         </svg>
                     </button>
