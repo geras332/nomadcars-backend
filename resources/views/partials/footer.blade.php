@@ -1,4 +1,4 @@
-<footer class="w-full">
+<footer class="w-full mt-[150px]">
     <div class="footer-bg py-10">
         <div class="container mx-auto px-6 sm:px-0 flex md:justify-between justify-center items-center flex-wrap gap-10 sm:gap-0">
             <div class="flex flex-col text-center sm:text-start gap-5">

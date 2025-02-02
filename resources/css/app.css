@@ -24,6 +24,11 @@ body {
     background: var(--header-bg);
 }
 
+.hero-block-bg {
+    background: linear-gradient(106.35deg, #333333 40.49%, #D20F0F 106.65%),
+    linear-gradient(0deg, rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.2));
+}
+
 .footer-bg {
     background: var(--primary-dark);
 }
