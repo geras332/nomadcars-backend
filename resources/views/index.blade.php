@@ -253,15 +253,192 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-between items-center mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-            <div>
+        <div class="flex justify-between items-start mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+            <div class="flex flex-col gap-[15px]">
+                <div class="w-[300px]">
+                    <div x-data="{ open: false, selected: 'Марка' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected"></span>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-white border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
+                            <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
+                            <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="flex items-center gap-5">
+                    <div x-data="{ open1: false, selected1: 'Кузов' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
+                            <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
+                            <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'Коробка' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
+                            <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
+                            <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-0">
+                    <div x-data="{ open1: false, selected1: 'Год от' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                        <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
+                            <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
+                            <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                        <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
+                            <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
+                            <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="flex flex-col gap-[15px]">
+                <div class="w-[300px]">
+                    <div x-data="{ open: false, selected: 'Марка' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected"></span>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
+                            <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
+                            <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="flex items-center gap-5">
+                    <div x-data="{ open1: false, selected1: 'Кузов' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
+                            <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
+                            <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'Коробка' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
+                            <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
+                            <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-0">
+                    <div x-data="{ open1: false, selected1: 'Год от' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
+                            <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
+                            <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
+                            <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
+                            <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div>
+            <div class="flex flex-col gap-[15px]">
+                <div class="w-[300px]">
+                    <div x-data="{ open: false, selected: 'Марка' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected"></span>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
+                            <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
+                            <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="flex items-center gap-5">
+                    <div x-data="{ open1: false, selected1: 'Кузов' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
+                            <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
+                            <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'Коробка' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
+                            <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
+                            <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-0">
+                    <div x-data="{ open1: false, selected1: 'Год от' }" class="relative w-1/2">
+                        <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected1"></span>
+                        </button>
+                        <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
+                            <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
+                            <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
+                        </ul>
+                    </div>
+
+                    <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
+                        <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none">
+                            <span x-text="selected2"></span>
+                        </button>
+                        <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-white border rounded-[10px] shadow-lg z-10">
+                            <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
+                            <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
+                            <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
