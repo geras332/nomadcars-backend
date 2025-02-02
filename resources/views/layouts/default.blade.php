@@ -11,11 +11,11 @@
     <title>Nomadcars - @yield('title')</title>
 </head>
 <body>
-    <div class="flex flex-col h-screen justify-between">
-        @include('partials.header')
+    @include('partials.header')
+    <main>
         @yield('content')
-        @include('partials.footer')
-    </div>
+    </main>
+    @include('partials.footer')
 
     @stack('scripts')
 </body>
