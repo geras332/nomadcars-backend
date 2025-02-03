@@ -254,9 +254,9 @@
             </div>
         </div>
         <div class="flex flex-col gap-7 mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-            <div class="flex justify-between items-start">
-                <div class="flex flex-col gap-[15px]">
-                    <div class="w-[300px] xl:w-[400px]">
+            <div class="flex justify-between items-start gap-10">
+                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
+                    <div class="w-[300px] xl:w-[350px]">
                         <div x-data="{ open: false, selected: 'Марка' }" class="relative">
                             <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
                                 <span x-text="selected"></span>
@@ -332,21 +332,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-[15px]">
-                    <div class="w-[300px] xl:w-[400px]">
-                        <div x-data="{ open: false, selected: 'Модель' }" class="relative">
-                            <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
-                                <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
-                                <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
-                                <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
-                            </ul>
-                        </div>
+                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
+                    <div x-data="{ open: false, selected: 'Модель' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                            <span x-text="selected"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
+                            <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
+                            <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
+                        </ul>
                     </div>
 
                     <div class="flex items-center gap-5">
@@ -380,37 +378,17 @@
                     </div>
 
                     <div class="flex items-center gap-0">
-                        <div x-data="{ open1: false, selected1: 'Пробег от' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
-                                <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
-                                <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
-                            </ul>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Пробег от">
                         </div>
 
-                        <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
-                                <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
-                                <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
-                            </ul>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До">
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-[15px]">
-                    <div class="w-[300px] xl:w-[400px]">
+                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
+                    <div class="w-[300px] xl:w-[350px]">
                         <div x-data="{ open: false, selected: 'Поколение' }" class="relative">
                             <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
                                 <span x-text="selected"></span>
@@ -457,32 +435,12 @@
                     </div>
 
                     <div class="flex items-center gap-0">
-                        <div x-data="{ open1: false, selected1: 'Цена от' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
-                                <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
-                                <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
-                            </ul>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Цена от">
                         </div>
 
-                        <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
-                                <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
-                                <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
-                            </ul>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До">
                         </div>
                     </div>
                 </div>
