@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-dark: #222222;
+    --primary-very-dark: #080808;
+    --danger: #FF3D3D;
+    --light-gray: #EDEDED;
+    --black: #000000;
+    --success: #2BAD72;
+    --red: #884444;
+    --blue: #2D93FF;
+
+    --header-bg: var(--primary-dark);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body > main {
+    flex-grow: 1;
+}
+
+body > footer {
+    margin-top: auto;
+}
+
+.header-bg {
+    background: var(--header-bg);
+}
+
+.hero-block-bg {
+    background: linear-gradient(106.35deg, #333333 40.49%, #D20F0F 106.65%),
+    linear-gradient(0deg, rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.2));
+}
+
+.footer-bg {
+    background: var(--primary-dark);
+}
+
+.notification-bg {
+    background: var(--danger);
+}
+
+.search-bg {
+    background: #EDEDED;
+}
+
+.success-btn-bg {
+    background: var(--success);
+}
+
+.danger-btn-border {
+    border: 1px solid var(--red);
+}
+
+.danger-text-color {
+    color: var(--red);
+}
+
+.text-primary-color {
+    color: var(--primary-very-dark);
+}
+
+@media screen and (max-width: 520px) {
+    footer ul {
+        font-size: 14px;
+    }
+}
