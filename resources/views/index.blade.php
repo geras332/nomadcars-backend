@@ -22,57 +22,57 @@
         </div>
         <div class="swiper mt-5">
             <div class="swiper-wrapper py-2">
-                <div class="swiper-slide rounded-2xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/BMW.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/MERCEDES.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/TESLA.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/ZEEKR.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/BYD.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/GAC.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/BENTLEY.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/AUDI.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/LEXUS.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/BRABUS.png') }}" alt="BMW">
                     </a>
                 </div>
-                <div class="swiper-slide rounded-2xl sm:rounded-3xl max-w-[88px] max-h-[88px] sm:max-w-[120px] sm:max-h-[120px]" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
+                <div class="swiper-slide rounded-2xl sm:rounded-3xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
                         <img src="{{ asset('images/logos/CHANGAN.png') }}" alt="BMW">
                     </a>
@@ -81,58 +81,155 @@
         </div>
         <div class="hidden xl:block mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
             <div class="grid grid-cols-6 gap-5">
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mazda</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mercedes</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">BMW</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">KIA</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Honda</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Toyota</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Audi</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Volkswagen</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Ford</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Chevrolet</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Nissan</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Hyundai</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lexus</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Subaru</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Volvo</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Porsche</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Jeep</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Land Rover</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Tesla</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Fiat</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Renault</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Peugeot</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Skoda</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mitsubishi</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Suzuki</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Jaguar</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mini</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Alfa Romeo</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Infiniti</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Cadillac</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Dodge</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Chrysler</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Buick</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lincoln</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Acura</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Genesis</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Maserati</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Bentley</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Rolls-Royce</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lamborghini</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Ferrari</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Aston Martin</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">McLaren</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Bugatti</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lotus</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Koenigsegg</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Pagani</a>
-                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Maybach</a>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Mazda</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Mercedes</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">BMW</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">KIA</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Honda</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Toyota</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Audi</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Volkswagen</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Ford</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Chevrolet</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Nissan</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Hyundai</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Lexus</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Subaru</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Volvo</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Porsche</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Jeep</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Land Rover</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Tesla</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Fiat</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Renault</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Peugeot</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Skoda</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Mitsubishi</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Suzuki</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Jaguar</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Mini</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Alfa Romeo</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Infiniti</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Cadillac</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Dodge</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Chrysler</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Buick</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Lincoln</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Acura</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Genesis</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Maserati</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Bentley</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Rolls-Royce</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Lamborghini</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Ferrari</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Aston Martin</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">McLaren</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Bugatti</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Lotus</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Koenigsegg</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Pagani</a>
+                </div>
+                <div>
+                    <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-90 inline-block" style="user-select: none;">Maybach</a>
+                </div>
+
             </div>
         </div>
         <div class="flex flex-col gap-7 mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-            <div class="flex justify-between gap-[20px]">
+            <div class="flex flex-col justify-between gap-[20px] md:flex-row">
                 <div class="flex flex-col gap-[15px]">
                     <div x-data="{ open: false, selected: 'Топливо' }" class="relative">
                         <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
@@ -174,7 +271,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="flex flex-col gap-[15px]">
                     <div x-data="{ open: false, selected: 'Привод' }" class="relative">
                         <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
@@ -214,7 +310,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="flex flex-col gap-[15px]">
                     <div x-data="{ open: false, selected: 'Руль' }" class="relative">
                         <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
@@ -248,10 +343,34 @@
                     </div>
                 </div>
             </div>
-
-            <div class="flex justify-end gap-[20px]">
-                <button class="danger-text-color danger-btn-border font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">Сбросить</button>
+            <div class="flex flex-col sm:flex-row sm:justify-end gap-[20px]">
+                <button class="flex justify-center items-center gap-1 danger-text-color danger-btn-border font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">
+                    Сбросить
+                    <span class="text-xl">&times;</span>
+                </button>
                 <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">Показать предложения</button>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mt-[40px]">
+            <div x-data="{ open: false, selected: 'Сортировка' }" class="relative">
+                <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                    <span x-text="selected"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                </button>
+                <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                    <li @click="selected = 'По цене'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">По цене</li>
+                    <li @click="selected = 'По дате'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">По дате</li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-[8px]">
+                <div class="w-[40px] h-[40px] flex justify-center items-center rounded-[10px] cursor-pointer" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                    <img src="{{ asset('images/icons/grid-view.svg') }}" alt="Grid View">
+                </div>
+                <div class="w-[40px] h-[40px] flex justify-center items-center rounded-[10px] cursor-pointer" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
+                    <img src="{{ asset('images/icons/list-view.svg') }}" alt="List View">
+                </div>
             </div>
         </div>
     </div>
