@@ -1,13 +1,13 @@
 @extends('layouts.default')
 
-@section('title', 'Главная страница')
+@section('title', 'Electric Cars for Sale Worldwide | Best EV Deals')
 
 @section('content')
     <div class="container mx-auto mt-5 px-5 sm:px-0 relative">
         <div class="hidden justify-center sm:flex">
             <img src="{{ asset('images/hero.png') }}" alt="Hero" class="rounded-3xl w-full">
             <div class="absolute top-5 right-10 text-white flex flex-col items-end text-end">
-                <h2 class="text-2xl sm:text-4xl lg:text-7xl font-bold mb-4">Соприкоснитесь с <br/> новым!</h2>
+                <h1 class="text-2xl sm:text-4xl lg:text-7xl font-bold mb-4">Electric Cars <br/> for Sale Worldwide</h1>
                 <a href="#"
                    class="bg-[#FCFCFC] text-black px-4 py-2 sm:px-6 sm:py-3 group mt-2 rounded-xl text-sm sm:text-lg font-medium transition transform hover:opacity-95 hover:shadow-lg active:opacity-95 active:shadow-lg flex items-center gap-2 max-w-[240px]">
                     Смотреть все
@@ -17,75 +17,74 @@
             </div>
         </div>
         <div class="flex justify-between items-center hero-block-bg rounded-2xl pl-2 py-5 sm:hidden">
-            <h1 class="text-white text-[18px] text-center text-wrap max-w-[140px]">We export new and used cars to any
-                country</h1>
+            <h1 class="text-white text-[18px] text-center text-wrap max-w-[140px]">Electric Cars <br/> for Sale Worldwide</h1>
             <img src="{{ asset('images/car.png') }}" alt="Car" class="max-w-[200px]">
         </div>
         <div class="swiper mt-5">
             <div class="swiper-wrapper py-2">
                 <div class="swiper-slide rounded-2xl" style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/BMW.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/BMW.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/MERCEDES.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/MERCEDES.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/TESLA.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/TESLA.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/ZEEKR.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/ZEEKR.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/BYD.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/BYD.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/GAC.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/GAC.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/BENTLEY.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/BENTLEY.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/AUDI.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/AUDI.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/LEXUS.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/LEXUS.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/BRABUS.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/BRABUS.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
                 <div class="swiper-slide rounded-2xl sm:rounded-3xl"
                      style="box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);">
                     <a href="#">
-                        <img src="{{ asset('images/logos/CHANGAN.png') }}" alt="BMW">
+                        <img src="{{ asset('images/logos/CHANGAN.png') }}" alt="BMW" loading="lazy">
                     </a>
                 </div>
             </div>
@@ -529,7 +528,7 @@
                     Сбросить
                     <span class="text-xl">&times;</span>
                 </button>
-                <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">
+                <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95">
                     Показать предложения
                 </button>
             </div>
@@ -575,13 +574,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -596,13 +595,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -617,13 +616,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -638,13 +637,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -659,13 +658,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -680,13 +679,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
@@ -701,13 +700,13 @@
                 </div>
                 <div class="flex flex-col gap-[10px]">
                     <h2 itemprop="name" class="text-primary-color text-xl font-medium">Title</h2>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="description">3,0 л/286 л.с/Дизель</p>
-                    <p class="text-[#6B6B6B] text-xs sm:text-sm" itemprop="vehicleTransmission">Автомат</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="description">3,0 л/286 л.с/Дизель</p>
+                    <p class="text-[#6B6B6B] text-base sm:text-lg" itemprop="vehicleTransmission">Автомат</p>
                     <div class="hidden sm:flex justify-between">
                         <span class="text-[#6B6B6B]" itemprop="mileageFromOdometer">Пробег: 308 000 км</span>
                         <span class="text-[#6B6B6B]" itemprop="productionDate">Год: 2022</span>
                     </div>
-                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95"
+                    <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95 active:scale-95"
                             itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <span itemprop="priceCurrency" content="USD">$</span>
                         <span itemprop="price">60 000</span>
