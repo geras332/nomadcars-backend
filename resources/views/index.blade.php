@@ -80,260 +80,61 @@
             </div>
         </div>
         <div class="hidden xl:block mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-            <div class="flex justify-between items-center">
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <a href="#" class="text-primary-color text-xl">
-                        Mazda
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Mercedes
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        BMW
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        KIA
-                    </a>
-                    <a href="#" class="text-primary-color text-xl">
-                        Honda
-                    </a>
-                </div>
+            <div class="grid grid-cols-6 gap-5">
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mazda</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mercedes</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">BMW</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">KIA</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Honda</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Toyota</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Audi</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Volkswagen</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Ford</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Chevrolet</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Nissan</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Hyundai</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lexus</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Subaru</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Volvo</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Porsche</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Jeep</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Land Rover</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Tesla</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Fiat</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Renault</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Peugeot</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Skoda</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mitsubishi</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Suzuki</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Jaguar</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Mini</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Alfa Romeo</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Infiniti</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Cadillac</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Dodge</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Chrysler</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Buick</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lincoln</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Acura</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Genesis</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Maserati</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Bentley</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Rolls-Royce</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lamborghini</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Ferrari</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Aston Martin</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">McLaren</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Bugatti</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Lotus</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Koenigsegg</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Pagani</a>
+                <a href="#" class="text-primary-color text-xl transition-transform duration-300 transform hover:scale-95">Maybach</a>
             </div>
         </div>
         <div class="flex flex-col gap-7 mt-[30px] rounded-[30px] p-[30px]" style="box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);">
-            <div class="flex justify-between items-start gap-10">
-                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
-                    <div class="w-[300px] xl:w-[350px]">
-                        <div x-data="{ open: false, selected: 'Марка' }" class="relative">
-                            <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
-                                <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
-                                <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
-                                <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-5">
-                        <div x-data="{ open1: false, selected1: 'Кузов' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
-                                <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
-                                <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
-                            </ul>
-                        </div>
-
-                        <div x-data="{ open2: false, selected2: 'Коробка' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
-                                <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
-                                <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-0">
-                        <div x-data="{ open1: false, selected1: 'Год от' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = '2010'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2010</li>
-                                <li @click="selected1 = '2015'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2015</li>
-                                <li @click="selected1 = '2020'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2020</li>
-                            </ul>
-                        </div>
-
-                        <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = '2022'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2022</li>
-                                <li @click="selected2 = '2023'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2023</li>
-                                <li @click="selected2 = '2024'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">2024</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
-                    <div x-data="{ open: false, selected: 'Модель' }" class="relative">
+            <div class="flex justify-between gap-[20px]">
+                <div class="flex flex-col gap-[15px]">
+                    <div x-data="{ open: false, selected: 'Топливо' }" class="relative">
                         <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
                             <span x-text="selected"></span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -341,96 +142,99 @@
                             </svg>
                         </button>
                         <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
-                            <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
-                            <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
-                            <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
+                            <li @click="selected = 'Бензин'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Бензин</li>
+                            <li @click="selected = 'Дизель'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Дизель</li>
+                            <li @click="selected = 'Электро'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Электро</li>
+                            <li @click="selected = 'Гибрид'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Гибрид</li>
                         </ul>
-                    </div>
-
-                    <div class="flex items-center gap-5">
-                        <div x-data="{ open1: false, selected1: 'Двигатель' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
-                                <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
-                                <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
-                            </ul>
-                        </div>
-
-                        <div x-data="{ open2: false, selected2: 'Привод' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
-                                <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
-                                <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
-                            </ul>
-                        </div>
                     </div>
 
                     <div class="flex items-center gap-0">
                         <div class="w-1/2">
-                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Пробег от">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Объем от, л">
                         </div>
-
                         <div class="w-1/2">
-                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До, л">
                         </div>
+                    </div>
+
+                    <div x-data="{ open: false, selected: 'Кузов' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                            <span x-text="selected"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'Седан'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
+                            <li @click="selected = 'Хэтчбек'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
+                            <li @click="selected = 'Универсал'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Универсал</li>
+                            <li @click="selected = 'Кроссовер'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
+                            <li @click="selected = 'Внедорожник'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Внедорожник</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="w-[300px] xl:w-[350px] flex flex-col gap-[15px]">
-                    <div class="w-[300px] xl:w-[350px]">
-                        <div x-data="{ open: false, selected: 'Поколение' }" class="relative">
-                            <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
-                                <li @click="selected = 'BMW'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">BMW</li>
-                                <li @click="selected = 'MERCEDES'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">MERCEDES</li>
-                                <li @click="selected = 'LEXUS'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">LEXUS</li>
-                            </ul>
+
+                <div class="flex flex-col gap-[15px]">
+                    <div x-data="{ open: false, selected: 'Привод' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                            <span x-text="selected"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'Передний'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Передний</li>
+                            <li @click="selected = 'Задний'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Задний</li>
+                            <li @click="selected = 'Полный'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Полный</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center gap-0">
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Мощность от, л.с.">
+                        </div>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До, л.с.">
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-5">
-                        <div x-data="{ open1: false, selected1: 'Объем от' }" class="relative w-1/2">
-                            <button @click="open1 = !open1" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected1"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open1 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open1" @click.away="open1 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected1 = 'Седан'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Седан</li>
-                                <li @click="selected1 = 'Хэтчбек'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Хэтчбек</li>
-                                <li @click="selected1 = 'Кроссовер'; open1 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Кроссовер</li>
-                            </ul>
-                        </div>
+                    <div x-data="{ open: false, selected: 'Коробка' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                            <span x-text="selected"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'Механика'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
+                            <li @click="selected = 'Автомат'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
+                            <li @click="selected = 'Робот'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
+                            <li @click="selected = 'Вариатор'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Вариатор</li>
+                        </ul>
+                    </div>
+                </div>
 
-                        <div x-data="{ open2: false, selected2: 'до' }" class="relative w-1/2">
-                            <button @click="open2 = !open2" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
-                                <span x-text="selected2"></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open2 ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </button>
-                            <ul x-show="open2" @click.away="open2 = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-[10px] shadow-lg z-10">
-                                <li @click="selected2 = 'Механика'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Механика</li>
-                                <li @click="selected2 = 'Автомат'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Автомат</li>
-                                <li @click="selected2 = 'Робот'; open2 = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Робот</li>
-                            </ul>
+                <div class="flex flex-col gap-[15px]">
+                    <div x-data="{ open: false, selected: 'Руль' }" class="relative">
+                        <button @click="open = !open" class="w-full px-[15px] py-[10px] text-left border border-[#0000004D] rounded-[10px] bg-[#FCFCFC] shadow-sm focus:outline-none flex items-center justify-between">
+                            <span x-text="selected"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 ml-2 transform transition-transform" :class="open ? 'rotate-180' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9l6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <ul x-show="open" @click.away="open = false" class="absolute left-0 mt-1 w-full bg-[#FCFCFC] border rounded-xl shadow-lg z-10">
+                            <li @click="selected = 'Левый'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Левый</li>
+                            <li @click="selected = 'Правый'; open = false" class="px-4 py-2 hover:bg-gray-200 cursor-pointer">Правый</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex items-center gap-0">
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Год от">
+                        </div>
+                        <div class="w-1/2">
+                            <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До">
                         </div>
                     </div>
 
@@ -438,13 +242,13 @@
                         <div class="w-1/2">
                             <input type="number" class="outline-none text-left border border-[#0000004D] rounded-l-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="Цена от">
                         </div>
-
                         <div class="w-1/2">
                             <input type="number" class="outline-none text-left border border-[#0000004D] rounded-r-lg bg-[#FCFCFC] py-2 px-4 w-full box-border" placeholder="До">
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="flex justify-end gap-[20px]">
                 <button class="danger-text-color danger-btn-border font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">Сбросить</button>
                 <button class="success-btn-bg text-white font-medium rounded-xl px-8 py-2 transition-transform duration-300 transform hover:scale-95">Показать предложения</button>
