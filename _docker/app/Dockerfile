@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp
 
-RUN docker-php-ext-install -j$(nproc) pdo_mysql gd zip bcmath intl && \
+RUN docker-php-ext-install -j$(nproc) pdo_pgsql gd zip bcmath intl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
